@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  width: 200px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6464;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #f04141;
+  transition: all 0.5s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--btn-hover-backcolor);
+  transition: all 0.5s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: #21243d;
+}
+
+/*  Navigation list  */
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto 0;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+nav ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #21243d;
+}
+nav ul li a:hover {
+  color: #f04141;
+}
+
+/* Header Container  */
+header {
+  padding-top: 140px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 160px;
+}
+header .header__info h1 {
+  font-size: 44px;
+  line-height: 60px;
+}
+header .header__info p {
+  margin: 40px 0;
+}
+header .header__info button {
+  margin-bottom: 70px;
+}
+header .header__img {
+  position: relative;
+  top: -30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid rgb(237, 247, 250);
+  width: 263px;
+  height: 263px;
+}
+header .header__img img {
+  width: 243px;
+  height: 243px;
+  border-radius: 100%;
+}
+header .header__img img:hover {
+  width: 263px;
+  height: 263px;
+}
+
+/* Main Container */
+main {
+  background-color: #edf7fa;
+  /* Recent posts section */
+}
+main section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+main section a {
+  color: #00a8cc;
+}
+main .main__posts {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  gap: 20px;
+}
+main .main__posts .main__posts__box {
+  padding: 25px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px 0px var(--box-shadow-color);
+}
+main .main__posts .main__posts__box h1 {
+  font-size: 26px;
+}
+main .main__posts .main__posts__box span {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto 11px;
+}
+main .main__posts .main__posts__box span h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+main .main__posts .main__posts__box span span {
+  width: 1px;
+  height: 20px;
+  background-color: rgb(33, 36, 61);
+}
+main .main__posts .main__posts__box p {
+  margin-bottom: 10px;
+}
+
+/* Featured Works section */
+section.featuredworks {
+  width: 80%;
+  margin: 0 auto;
+}
+section.featuredworks h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 15px auto 0;
+}
+section.featuredworks .card-container hr {
+  margin-top: 10px;
+}
+section.featuredworks .card-container .card {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+}
+section.featuredworks .card-container .card .card-img img {
+  border-radius: 6px;
+}
+section.featuredworks .card-container .card .card-content h1 {
+  font-size: 30px;
+}
+section.featuredworks .card-container .card .card-content span {
+  margin: 12px auto 17px;
+  display: flex;
+  gap: 25px;
+}
+section.featuredworks .card-container .card .card-content span h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 16px;
+  background-color: #142850;
+  padding: 1px 10px;
+}
+section.featuredworks .card-container .card .card-content span p {
+  color: #8695a4;
+  font-size: 20px;
+}
+section.featuredworks .card-container .card .card-content p {
+  width: 70%;
+}
+
+/* Footer Content */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 130px auto 50px;
+}
+footer .social-media__icons {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+footer .social-media__icons a:hover > svg {
+  background-color: rgb(219, 202, 202);
+  border-radius: 4px;
+}/*# sourceMappingURL=style.css.map */
